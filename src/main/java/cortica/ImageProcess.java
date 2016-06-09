@@ -68,7 +68,7 @@ public class ImageProcess {
                 "jdbc:hsqldb:file:database/database", "test", "test",
                 "org.hsqldb.jdbcDriver");
         db.createTable();
-        db.insertIntoTable( date,url,"images/"+fileName,urlMD5);
+        db.insertIntoTable( date,url,"images/" + urlMD5 + "." + ext,urlMD5);
         return self;
     }
 
